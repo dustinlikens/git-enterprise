@@ -36,7 +36,6 @@ class Application
     # output = page.body
 
 
-
     Capybara.register_driver(:poltergeist) { |app| Capybara::Poltergeist::Driver.new(app, js_errors: false, debug: false, phantomjs_options: ['--load-images=false', '--disk-cache=false'] ) }
     Capybara.default_driver = :poltergeist
 
